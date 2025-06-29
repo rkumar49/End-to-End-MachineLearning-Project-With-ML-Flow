@@ -1,0 +1,21 @@
+Rahul@LAPTOP-MSIV2KL8 MINGW64 /c/End-to-End-MachineLearning-Project-With-ML-Flow (main)
+$ source environment/Scripts/activate
+(environment)
+Rahul@LAPTOP-MSIV2KL8 MINGW64 /c/End-to-End-MachineLearning-Project-With-ML-Flow (main)
+$ python main.py
+Traceback (most recent call last):
+  File "main.py", line 2, in <module>
+    from src.mlProject.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
+  File "C:\End-to-End-MachineLearning-Project-With-ML-Flow\src\mlProject\pipeline\stage_01_data_ingestion.py", line 1, in <module>
+    from src.mlProject.config.configuration import ConfigurationManager
+  File "C:\End-to-End-MachineLearning-Project-With-ML-Flow\src\mlProject\config\configuration.py", line 2, in <module>
+    from src.mlProject.utils.common import read_yaml, create_directories
+  File "C:\End-to-End-MachineLearning-Project-With-ML-Flow\src\mlProject\utils\common.py", line 4, in <module>
+    from mlProject import logger
+ModuleNotFoundError: No module named 'mlProject'
+(environment)
+Rahul@LAPTOP-MSIV2KL8 MINGW64 /c/End-to-End-MachineLearning-Project-With-ML-Flow (main)
+$ export PYTHONPATH=$PWD/src
+(environment)
+Rahul@LAPTOP-MSIV2KL8 MINGW64 /c/End-to-End-MachineLearning-Project-With-ML-Flow (main)
+$ python main.py

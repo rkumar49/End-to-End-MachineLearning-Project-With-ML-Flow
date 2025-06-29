@@ -1,8 +1,8 @@
 from src.mlProject import logger
 from src.mlProject.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from src.mlProject.pipeline.stage_02_data_validation import DataValidationTrainingPipeline
-#from src.mlProject.pipeline.stage_03_data_transformation import DataTransformationTrainingPipeline
-#from src.mlProject.pipeline.stage_04_model_trainer import ModelTrainerTrainingPipeline
+from src.mlProject.pipeline.stage_03_data_transformation import DataTransformationTrainingPipeline
+from src.mlProject.pipeline.stage_04_model_trainer import ModelTrainerTrainingPipeline
 #from src.mlProject.pipeline.stage_05_model_evaluation import ModelEvaluationTrainingPipeline
 
 
@@ -31,7 +31,7 @@ except Exception as e:
 
 
 
-'''
+
 
 STAGE_NAME = "Data Transformation stage"
 try:
@@ -56,7 +56,7 @@ except Exception as e:
         logger.exception(e)
         raise e
 
-
+'''
 
 STAGE_NAME = "Model evaluation stage"
 try:
