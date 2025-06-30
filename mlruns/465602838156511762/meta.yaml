@@ -1,0 +1,6 @@
+artifact_location: file:///C:/End-to-End-MachineLearning-Project-With-ML-Flow/mlruns/465602838156511762
+creation_time: 1751325840478
+experiment_id: '465602838156511762'
+last_update_time: 1751325840478
+lifecycle_stage: active
+name: WineQualityElasticNet

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/End-to-End-MachineLearning-Project-With-ML-Flow/mlruns/0/47ee8177c70d4c688f0f7432d93f75fe/artifacts
+end_time: 1751326514428
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 47ee8177c70d4c688f0f7432d93f75fe
+run_name: abundant-crane-324
+run_uuid: 47ee8177c70d4c688f0f7432d93f75fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751326506372
+status: 3
+tags: []
+user_id: Rahul

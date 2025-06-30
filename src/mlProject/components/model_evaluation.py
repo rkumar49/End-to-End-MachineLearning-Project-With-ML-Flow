@@ -7,9 +7,14 @@ import mlflow
 import mlflow.sklearn
 import numpy as np
 import joblib
-from mlProject.entity.config_entity import ModelEvaluationConfig
-from mlProject.utils.common import save_json
+from src.mlProject.entity.config_entity import ModelEvaluationConfig
+from src.mlProject.utils.common import save_json
 from pathlib import Path
+import os
+
+os.environ["MLFLOW_TRACKING_URI"] = "https://dagshub.com/entbappy/End-to-end-Machine-Learning-Project-with-MLflow.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"] = "entbappy"
+os.environ["MLFLOW_TRACKING_PASSWORD"] = "6824692c47a369aa6f9eac5b10041d5c8edbcef0"
 
 
 class ModelEvaluation:
@@ -59,11 +64,12 @@ class ModelEvaluation:
         })
 
         # Set MLflow tracking URI from config
-        mlflow.set_registry_uri(self.config.mlflow_uri)
+        #mlflow.set_registry_uri(self.config.mlflow_uri)
+        
 
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
-        with mlflow.start_run():
+        with mlflow.start_run() as run:
             # Log hyperparameters
             mlflow.log_params(self.config.all_params)
 
@@ -78,6 +84,13 @@ class ModelEvaluation:
             else:
                 mlflow.sklearn.log_model(model, "model")
 
+            # add this to print the link to the run
+            experiment_id = run.info.experiment_id
+            run_id = run.info.run_id
+            tracking_uri = self.config.mlflow_uri
+            print(
+                f"View run at: {tracking_uri}/#/experiments/{experiment_id}/runs/{run_id}"
+                )
         print(f"Logged model and metrics to MLflow with alpha={self.config.all_params['alpha']}, "
               f"l1_ratio={self.config.all_params['l1_ratio']}")
 

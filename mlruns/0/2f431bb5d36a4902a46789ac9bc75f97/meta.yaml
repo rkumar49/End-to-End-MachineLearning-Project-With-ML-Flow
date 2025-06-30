@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/End-to-End-MachineLearning-Project-With-ML-Flow/mlruns/0/2f431bb5d36a4902a46789ac9bc75f97/artifacts
+end_time: 1751323769956
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2f431bb5d36a4902a46789ac9bc75f97
+run_name: agreeable-frog-276
+run_uuid: 2f431bb5d36a4902a46789ac9bc75f97
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751323763008
+status: 3
+tags: []
+user_id: Rahul

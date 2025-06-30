@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/End-to-End-MachineLearning-Project-With-ML-Flow/mlruns/0/572ff7b79a694a8482f74f90cf4960d1/artifacts
+end_time: 1751324814175
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 572ff7b79a694a8482f74f90cf4960d1
+run_name: shivering-fly-811
+run_uuid: 572ff7b79a694a8482f74f90cf4960d1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751324804881
+status: 4
+tags: []
+user_id: Rahul
